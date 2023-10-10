@@ -1,0 +1,197 @@
+/* Estilos generales */
+body {
+    font-family: "Inter", Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos de encabezado */
+header {
+    background-color: #ffffff;
+    color: #fff;
+    display: flex;
+}
+
+/* Estilo de la sección izquierda del encabezado */
+#header-left {
+    background-color: #0c5041;
+    height: auto;
+    width: 50%;
+    text-align: justify;
+}
+
+.responsive-image {
+    width: 100%;
+    height: 553px;
+}
+
+/* Estilo de la sección derecha del encabezado */
+#header-right {
+    height: 554px;
+    width: 50%;
+}
+
+#logo {
+    margin-left: 150px;
+    margin-top: 160px;
+    height: 55px;
+}
+
+#header-left h1 {
+    font-size: 31px;
+    margin: 10px;
+    margin-top: -46px;
+    margin-left: 360px;
+    margin-right: auto;
+    text-align: center;
+    position: absolute;
+}
+
+#header-left p {
+    margin: 10px;
+    text-align: justify;
+    margin-right: 150px;
+    margin-left: 150px;
+}
+
+#header-left button {
+    background-color: #fff;
+    border-radius: 20px;
+    height: 45px;
+    width: 40%;
+    margin-top: 20px;
+    margin-left: 150px;
+}
+
+/* Estilos para imágenes */
+img, #enjoy-membership-benefits img, #bottom-right-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+p {
+    font-size: 14px;
+    text-align: justify;
+    margin-left: 10px;
+}
+
+#competitive-pricing, #project-rollout-capabilities, #dedicated-support {
+    margin-left: 25px;
+    margin-top: 50px;
+    text-align: justify;
+    border-left: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+
+#competitive-pricing h1, #project-rollout-capabilities h1, #dedicated-support h1, h1 {
+    font-size: 16px;
+    text-align: justify;
+}
+
+#membership-perks h1 {
+    font-size: 25px;
+    margin-top: 50px;
+    margin-left: 190px;
+    text-align: justify;
+}
+
+/* Estilos para pantallas más pequeñas (ejemplo: dispositivos móviles) */
+@media (max-width: 764px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+    .responsive-image {
+        width: 100%;
+        height: auto;
+    }
+    #header-left, #header-right {
+        width: 100%;
+        text-align: center;
+        height: auto;
+    }
+    #logo {
+        height: auto;
+        margin-top: auto;
+        margin-right: 500px;
+        margin-left: 2px;
+    }
+    #header-left h1 {
+        margin-top: -35px;
+        font-size: 24px;
+        margin-left: 150px;
+    }
+    #header-left p {
+        font-size: 14px;
+        margin-left: 10px;
+        margin-right: 120px;
+    }
+    #header-left button {
+        margin-top: 1px;
+        margin-right: 50px;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    #enjoy-membership-benefits h2.custom-title, #let-us-help h2.custom-title {
+        margin-top: 20px;
+    }
+    #membership-perks h1.custom-title{
+        margin-top: 60px;
+        margin-left: 40px;
+    }
+
+    #div5, #div8 {
+        margin-top: 100px;
+    }
+}
+
+/* Estilos para los divs en el main */
+.horizontal-divs {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* Configuramos el responsive para que se vea en dos columnas*/
+.horizontal-divs > div {
+    flex: 1;
+    margin-right: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0);
+    height: auto;
+    max-width: calc(50% - 10px);
+}
+
+/* Titulos en h2 */
+.custom-title {
+    font-size: 25px;
+    text-align: justify;
+    margin: 10px;
+}
+
+/* Estilos adicionales para pantallas más pequeñas (min-width: 764px) */
+@media (min-width: 764px) {
+    #benefits-list {
+        margin-top: 250px;
+        margin-right: 180px;
+    }
+    #let-us-help {
+        margin-top: 250px;
+        margin-left: 200px;
+    }
+
+    #bottom-right-image {
+        margin-top: 130px;
+        margin-right: 230px;
+    }
+    #enjoy-membership-benefits {
+        margin-top: 130px;
+        margin-left: 180px;
+    }
+}
